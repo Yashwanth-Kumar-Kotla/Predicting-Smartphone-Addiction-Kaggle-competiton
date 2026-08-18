@@ -1,0 +1,18 @@
+======================================================================
+Baseline for reference: exp013 simple weighted blend (3 trees) = 0.96476
+======================================================================
+Stack(3 trees) + Logistic meta                AUC=0.96476
+Stack(3 trees+logistic+mlp) + Logistic meta   AUC=0.96436
+Stack(3 trees+logistic+mlp) + GBM meta (nonlinear) AUC=0.96470
+Stack(3 trees only) + GBM meta (control)      AUC=0.96467
+
+======================================================================
+SUMMARY
+======================================================================
+exp013 simple weighted blend (3 trees, linear weights): 0.96476
+Stack(3 trees) + Logistic meta:                          0.96476
+Stack(5 models) + Logistic meta:                         0.96436
+Stack(3 trees) + GBM meta (nonlinear, control):          0.96467
+Stack(5 models) + GBM meta (nonlinear):                  0.96470
+
+Best stacker: tree3_lr = 0.96476  (delta vs exp013: -0.00000)

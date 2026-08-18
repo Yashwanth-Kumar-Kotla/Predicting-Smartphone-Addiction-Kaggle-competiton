@@ -1,0 +1,14 @@
+fold 0: AUC=0.96295  best_iter=6816  (cap=12000)
+fold 1: AUC=0.96336  best_iter=5720  (cap=12000)
+fold 2: AUC=0.96409  best_iter=7305  (cap=12000)
+fold 3: AUC=0.96453  best_iter=7254  (cap=12000)
+fold 4: AUC=0.96358  best_iter=7336  (cap=12000)
+
+OOF AUC: 0.96370
+fold mean: 0.96370  fold std: 0.000555
+runtime: 992.7s
+
+vs exp007 undertrained CatBoost baseline (0.96347): delta = +0.00023
+vs exp008 XGBoost (current best single, 0.96461): delta = -0.00091
+
+Logged to experiments/experiment_log.csv
