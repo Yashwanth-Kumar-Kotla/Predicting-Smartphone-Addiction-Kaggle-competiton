@@ -26,7 +26,9 @@ print(f"train columns: {list(train.columns)}")
 print(f"test columns:  {list(test.columns)}")
 
 feature_cols = [c for c in train.columns if c not in (ID_COL, TARGET)]
-cat_cols = [c for c in feature_cols if train[c].dtype == object]
+# pandas >=3.0 defaults string columns to a "str" extension dtype, not
+# object -- dtype == object silently misses them, so use is_string_dtype.
+cat_cols = [c for c in feature_cols if pd.api.types.is_string_dtype(train[c])]
 num_cols = [c for c in feature_cols if c not in cat_cols]
 print(f"\nnumeric features ({len(num_cols)}): {num_cols}")
 print(f"categorical features ({len(cat_cols)}): {cat_cols}")

@@ -1,0 +1,231 @@
+======================================================================
+SHAPES
+======================================================================
+train: (691369, 14)   test: (296302, 13)
+train columns: ['id', 'age', 'daily_screen_time_hours', 'social_media_hours', 'gaming_hours', 'work_study_hours', 'sleep_hours', 'notifications_per_day', 'app_opens_per_day', 'weekend_screen_time', 'gender', 'stress_level', 'academic_work_impact', 'addicted_label']
+test columns:  ['id', 'age', 'daily_screen_time_hours', 'social_media_hours', 'gaming_hours', 'work_study_hours', 'sleep_hours', 'notifications_per_day', 'app_opens_per_day', 'weekend_screen_time', 'gender', 'stress_level', 'academic_work_impact']
+
+numeric features (9): ['age', 'daily_screen_time_hours', 'social_media_hours', 'gaming_hours', 'work_study_hours', 'sleep_hours', 'notifications_per_day', 'app_opens_per_day', 'weekend_screen_time']
+categorical features (3): ['gender', 'stress_level', 'academic_work_impact']
+
+======================================================================
+DTYPES
+======================================================================
+id                           int64
+age                        float64
+daily_screen_time_hours    float64
+social_media_hours         float64
+gaming_hours               float64
+work_study_hours           float64
+sleep_hours                float64
+notifications_per_day      float64
+app_opens_per_day          float64
+weekend_screen_time        float64
+gender                         str
+stress_level                   str
+academic_work_impact           str
+addicted_label               int64
+dtype: object
+
+======================================================================
+MISSING VALUES (train)
+======================================================================
+                         n_missing  pct_missing
+social_media_hours          133995       19.381
+gaming_hours                126821       18.343
+weekend_screen_time         112063       16.209
+daily_screen_time_hours      95854       13.864
+app_opens_per_day            80710       11.674
+notifications_per_day        67584        9.775
+stress_level                 55148        7.977
+work_study_hours             51518        7.452
+sleep_hours                  44480        6.434
+academic_work_impact         44224        6.397
+gender                       29034        4.199
+age                          28929        4.184
+id                               0        0.000
+addicted_label                   0        0.000
+
+======================================================================
+MISSING VALUES (test)
+======================================================================
+                         n_missing  pct_missing
+gaming_hours                 59420       20.054
+weekend_screen_time          50697       17.110
+social_media_hours           47397       15.996
+notifications_per_day        34221       11.549
+daily_screen_time_hours      32788       11.066
+work_study_hours             27777        9.375
+academic_work_impact         25721        8.681
+app_opens_per_day            25705        8.675
+sleep_hours                  22455        7.578
+stress_level                 19626        6.624
+age                          17138        5.784
+gender                       14212        4.796
+id                               0        0.000
+
+======================================================================
+DUPLICATES
+======================================================================
+duplicate id (train): 0
+duplicate id (test): 0
+fully duplicate rows (train, incl target): 0
+duplicate feature rows (train, excl target/id): 0
+duplicate feature rows (test, excl id): 0
+
+train id range: 0 - 691368
+test id range: 691369 - 987670
+id overlap between train/test: 0
+
+======================================================================
+CARDINALITY / UNIQUE VALUES (categoricals)
+======================================================================
+
+--- gender ---
+train:
+ gender
+Male      223662
+Female    221595
+Other     217078
+NaN        29034
+Name: count, dtype: int64
+test:
+ gender
+Male      95357
+Female    94295
+Other     92438
+NaN       14212
+Name: count, dtype: int64
+train-only categories: set()
+test-only categories: set()
+
+--- stress_level ---
+train:
+ stress_level
+High      220873
+Low       207783
+Medium    207565
+NaN        55148
+Name: count, dtype: int64
+test:
+ stress_level
+High      95622
+Low       90746
+Medium    90308
+NaN       19626
+Name: count, dtype: int64
+train-only categories: set()
+test-only categories: set()
+
+--- academic_work_impact ---
+train:
+ academic_work_impact
+Yes    330566
+No     316579
+NaN     44224
+Name: count, dtype: int64
+test:
+ academic_work_impact
+Yes    138694
+No     131887
+NaN     25721
+Name: count, dtype: int64
+train-only categories: set()
+test-only categories: set()
+
+======================================================================
+NUMERIC SUMMARY (train)
+======================================================================
+                            count        mean  ...     75%     max
+age                      662440.0   26.615408  ...   31.00   35.00
+daily_screen_time_hours  595515.0    7.640865  ...    9.84   15.00
+social_media_hours       557374.0    2.471038  ...    3.37    8.00
+gaming_hours             564548.0    1.459265  ...    2.09    4.00
+work_study_hours         639851.0    2.366971  ...    3.20    6.00
+sleep_hours              646889.0    6.804334  ...    7.87    9.00
+notifications_per_day    623785.0  145.894900  ...  204.00  250.00
+app_opens_per_day        610659.0  102.636781  ...  145.00  180.00
+weekend_screen_time      579306.0    9.479866  ...   11.75   17.56
+
+[9 rows x 8 columns]
+
+======================================================================
+NUMERIC SUMMARY (test)
+======================================================================
+                            count        mean  ...     75%     max
+age                      279164.0   26.608689  ...   31.00   35.00
+daily_screen_time_hours  263514.0    7.640771  ...    9.85   15.00
+social_media_hours       248905.0    2.471224  ...    3.37    7.85
+gaming_hours             236882.0    1.457668  ...    2.09    4.00
+work_study_hours         268525.0    2.365962  ...    3.20    6.00
+sleep_hours              273847.0    6.801704  ...    7.87    9.00
+notifications_per_day    262081.0  145.748066  ...  204.00  250.00
+app_opens_per_day        270597.0  102.656216  ...  145.00  180.00
+weekend_screen_time      245605.0    9.474575  ...   11.75   17.56
+
+[9 rows x 8 columns]
+
+======================================================================
+TARGET DISTRIBUTION
+======================================================================
+addicted_label
+1    490474
+0    200895
+Name: count, dtype: int64
+addicted_label
+1    0.709424
+0    0.290576
+Name: proportion, dtype: float64
+
+======================================================================
+UNIVARIATE PREDICTIVE POWER (single-feature LGBM AUC, 3-fold OOF)
+======================================================================
+age                             AUC=0.55042  missing=True
+daily_screen_time_hours         AUC=0.87124  missing=True
+social_media_hours              AUC=0.82176  missing=True
+gaming_hours                    AUC=0.63068  missing=True
+work_study_hours                AUC=0.66239  missing=True
+sleep_hours                     AUC=0.57982  missing=True
+notifications_per_day           AUC=0.74323  missing=True
+app_opens_per_day               AUC=0.73288  missing=True
+weekend_screen_time             AUC=0.85819  missing=True
+gender                          AUC=0.51168  missing=True
+stress_level                    AUC=0.50265  missing=True
+academic_work_impact            AUC=0.50135  missing=True
+
+======================================================================
+MISSINGNESS AS SIGNAL (AUC of is-null indicator alone)
+======================================================================
+age                             missing-indicator AUC=0.50040  (0.5=no signal)
+daily_screen_time_hours         missing-indicator AUC=0.50063  (0.5=no signal)
+social_media_hours              missing-indicator AUC=0.50000  (0.5=no signal)
+gaming_hours                    missing-indicator AUC=0.50048  (0.5=no signal)
+work_study_hours                missing-indicator AUC=0.50022  (0.5=no signal)
+sleep_hours                     missing-indicator AUC=0.50062  (0.5=no signal)
+notifications_per_day           missing-indicator AUC=0.50019  (0.5=no signal)
+app_opens_per_day               missing-indicator AUC=0.50095  (0.5=no signal)
+weekend_screen_time             missing-indicator AUC=0.50048  (0.5=no signal)
+gender                          missing-indicator AUC=0.49994  (0.5=no signal)
+stress_level                    missing-indicator AUC=0.49992  (0.5=no signal)
+academic_work_impact            missing-indicator AUC=0.50000  (0.5=no signal)
+
+======================================================================
+ADVERSARIAL VALIDATION (can a model tell train from test?)
+======================================================================
+Adversarial validation AUC (train vs test discriminability): 0.56456
+(0.5 = train and test are indistinguishable, good; >0.55-0.6 = distribution shift, investigate)
+                    feature  importance
+5               sleep_hours      1046.2
+4          work_study_hours       977.8
+3              gaming_hours       972.6
+2        social_media_hours       953.4
+6     notifications_per_day       941.2
+8       weekend_screen_time       935.0
+1   daily_screen_time_hours       928.0
+7         app_opens_per_day       859.4
+0                       age       499.6
+10             stress_level       255.6
+11     academic_work_impact       217.2
+9                    gender       143.0
+
+DONE.
