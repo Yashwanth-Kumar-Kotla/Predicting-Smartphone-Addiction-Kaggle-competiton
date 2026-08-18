@@ -1,0 +1,14 @@
+complete-case rows for these 5 features: 395959 / 691369 (57.3%)
+
+Linear logistic regression (5 features, standardized) OOF AUC: 0.92735
+Standardized coefficients (relative weight in latent score):
+  social_media_hours             +1.2718
+  weekend_screen_time            +1.1394
+  daily_screen_time_hours        +1.1256
+  work_study_hours               -0.3611
+  gaming_hours                   -0.3134
+
+Logistic + squared terms OOF AUC: 0.93990  (delta vs linear: +0.01254)
+
+For reference: exp001 full LightGBM (all 12 features) OOF AUC = 0.96384
+Gap (LGBM full - logistic-5feat-linear): +0.03649

@@ -1,0 +1,10 @@
+feature                          raw-value AUC   logistic-1feat AUC
+daily_screen_time_hours                0.88955              0.88955
+weekend_screen_time                    0.88099              0.88099
+social_media_hours                     0.85778              0.85778
+work_study_hours                       0.65488              0.65488
+gaming_hours                           0.62196              0.62195
+app_opens_per_day                      0.54088              0.54090
+sleep_hours                            0.52695              0.52690
+notifications_per_day                  0.50786              0.50779
+age                                    0.50227              0.50147
