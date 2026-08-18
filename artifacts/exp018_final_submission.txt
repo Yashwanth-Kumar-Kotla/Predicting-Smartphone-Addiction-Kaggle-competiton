@@ -1,0 +1,22 @@
+train shape: (691369, 9)  test shape: (296302, 9)
+
+Training LightGBM on full data...
+done.
+Training CatBoost on full data...
+done.
+Training XGBoost on full data...
+done.
+
+Blend weights: {'lgbm': 0.16806628768293164, 'catboost': 0.16868332128635175, 'xgboost': 0.6632503910307166}
+
+All Phase 15 sanity checks passed.
+submission.csv written: 296302 rows
+       id  addicted_label
+0  691369        0.999700
+1  691370        0.935664
+2  691371        0.947131
+3  691372        0.991345
+4  691373        0.998150
+
+prediction stats: min=0.00006 max=1.00000 mean=0.70958
+(train target mean for reference: 0.70942)
