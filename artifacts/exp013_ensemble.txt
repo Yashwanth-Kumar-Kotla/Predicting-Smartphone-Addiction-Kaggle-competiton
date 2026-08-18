@@ -1,0 +1,19 @@
+Individual OOF AUCs:
+  lgbm       0.96384
+  catboost   0.96347
+  xgboost    0.96461
+
+Pairwise correlation of OOF predictions:
+                 lgbm   catboost    xgboost
+lgbm          1.00000    0.99295    0.99468
+catboost      0.99295    1.00000    0.99278
+xgboost       0.99468    0.99278    1.00000
+
+Equal-weight blend OOF AUC: 0.96462
+Rank-averaging blend OOF AUC: 0.96461
+
+OOF-optimized weights: lgbm=0.168, catboost=0.169, xgboost=0.663
+OOF-optimized blend AUC: 0.96476
+
+Best single model (xgboost, exp008): 0.96461
+Gain from optimized ensemble: +0.00015

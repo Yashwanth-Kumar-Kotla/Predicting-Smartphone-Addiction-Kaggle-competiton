@@ -1,0 +1,12 @@
+fold 0: AUC=0.96273  best_iter=4992
+fold 1: AUC=0.96325  best_iter=4997
+fold 2: AUC=0.96378  best_iter=4998
+fold 3: AUC=0.96424  best_iter=4995
+fold 4: AUC=0.96334  best_iter=4979
+
+OOF AUC: 0.96347
+fold mean: 0.96347  fold std: 0.000510
+best fold: 0.96424  worst fold: 0.96273
+runtime: 1024.5s
+
+Logged to experiments/experiment_log.csv

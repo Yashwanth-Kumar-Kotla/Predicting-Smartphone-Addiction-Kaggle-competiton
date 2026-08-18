@@ -1,0 +1,27 @@
+Top feature-pair interactions by mean |SHAP interaction value|:
+  daily_screen_time_hours      x social_media_hours            0.28178
+  daily_screen_time_hours      x weekend_screen_time           0.21328
+  daily_screen_time_hours      x work_study_hours              0.13007
+  social_media_hours           x weekend_screen_time           0.12247
+  daily_screen_time_hours      x gaming_hours                  0.11711
+  gaming_hours                 x weekend_screen_time           0.10405
+  social_media_hours           x work_study_hours              0.10353
+  social_media_hours           x gaming_hours                  0.09792
+  work_study_hours             x weekend_screen_time           0.08715
+  gaming_hours                 x work_study_hours              0.06006
+  daily_screen_time_hours      x app_opens_per_day             0.05918
+  social_media_hours           x sleep_hours                   0.05901
+  daily_screen_time_hours      x notifications_per_day         0.05558
+  social_media_hours           x app_opens_per_day             0.05215
+  notifications_per_day        x weekend_screen_time           0.05200
+
+Main-effect (diagonal) SHAP magnitude per feature:
+  daily_screen_time_hours      2.18409
+  weekend_screen_time          1.58878
+  social_media_hours           1.58490
+  notifications_per_day        0.43180
+  app_opens_per_day            0.41776
+  work_study_hours             0.23588
+  gaming_hours                 0.22135
+  sleep_hours                  0.16726
+  age                          0.12395

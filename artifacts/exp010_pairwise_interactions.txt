@@ -1,0 +1,13 @@
+fold 0: AUC=0.96351  best_iter=4279
+fold 1: AUC=0.96422  best_iter=3980
+fold 2: AUC=0.96450  best_iter=4709
+fold 3: AUC=0.96513  best_iter=4528
+fold 4: AUC=0.96405  best_iter=4315
+
+OOF AUC: 0.96428
+fold mean: 0.96428  fold std: 0.000531
+runtime: 587.6s
+
+vs exp008 baseline (0.96461): delta = -0.00033
+
+Logged to experiments/experiment_log.csv

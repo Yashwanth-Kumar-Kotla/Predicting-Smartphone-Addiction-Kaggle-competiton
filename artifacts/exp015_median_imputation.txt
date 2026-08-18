@@ -1,0 +1,13 @@
+fold 0: AUC=0.96376  best_iter=4458
+fold 1: AUC=0.96438  best_iter=4670
+fold 2: AUC=0.96446  best_iter=4592
+fold 3: AUC=0.96531  best_iter=4495
+fold 4: AUC=0.96381  best_iter=3983
+
+OOF AUC: 0.96434
+fold mean: 0.96434  fold std: 0.000564
+runtime: 311.6s
+
+vs exp008 native-NaN baseline (0.96461): delta = -0.00027
+
+Logged to experiments/experiment_log.csv

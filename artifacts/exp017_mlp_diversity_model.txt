@@ -1,0 +1,16 @@
+fold 0: AUC=0.93721  n_iter=68
+fold 1: AUC=0.93772  n_iter=58
+fold 2: AUC=0.93861  n_iter=64
+fold 3: AUC=0.93881  n_iter=45
+fold 4: AUC=0.93754  n_iter=56
+
+OOF AUC: 0.93784
+fold mean: 0.93798  fold std: 0.000622
+runtime: 140.9s
+
+Correlation with exp013 tree ensemble OOF: 0.92023
+Best blend weights: tree_ensemble=1.000, mlp=0.000
+Blended OOF AUC: 0.96476  (vs tree-ensemble-alone 0.96476)
+Gain from adding MLP to ensemble: +0.00000
+
+Logged to experiments/experiment_log.csv
