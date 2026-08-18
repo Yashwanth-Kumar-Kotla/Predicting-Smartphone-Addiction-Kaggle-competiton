@@ -1,0 +1,30 @@
+
+--- seed 42 ---
+LightGBM...
+CatBoost...
+XGBoost...
+seed 42 done, elapsed 531s
+
+--- seed 202 ---
+LightGBM...
+CatBoost...
+XGBoost...
+seed 202 done, elapsed 1099s
+
+--- seed 2026 ---
+LightGBM...
+CatBoost...
+XGBoost...
+seed 2026 done, elapsed 1629s
+
+Total runtime: 1629.0s
+Blend weights (from exp013): {'lgbm': 0.16806628768293164, 'catboost': 0.16868332128635175, 'xgboost': 0.6632503910307166}
+
+All Phase 15 sanity checks passed.
+submission_multiseed.csv written: 296302 rows
+mean |change| vs original submission.csv: 0.00438
+max |change| vs original submission.csv: 0.11080
+correlation with original submission.csv: 0.999733
+
+prediction stats: min=0.00006 max=1.00000 mean=0.70965
+(train target mean for reference: 0.70942)
