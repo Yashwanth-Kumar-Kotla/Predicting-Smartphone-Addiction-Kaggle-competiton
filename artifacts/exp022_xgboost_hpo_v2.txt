@@ -1,0 +1,13 @@
+Completed 21 trials in 9509.4s
+Best 5-fold CV AUC (honest, no proxy): 0.96473
+Best params: {'learning_rate': 0.03282008698791566, 'max_depth': 5, 'min_child_weight': 15.24570719657261, 'subsample': 0.8587985124917897, 'colsample_bytree': 0.7176705564463268, 'reg_alpha': 0.017620620650533242, 'reg_lambda': 1.9328362668226535, 'gamma': 0.0664554502509245}
+vs exp008 untuned baseline (0.96461): delta = +0.00012
+
+Top 5 trials:
+  trial 18: AUC=0.96473  params={'learning_rate': 0.03282008698791566, 'max_depth': 5, 'min_child_weight': 15.24570719657261, 'subsample': 0.8587985124917897, 'colsample_bytree': 0.7176705564463268, 'reg_alpha': 0.017620620650533242, 'reg_lambda': 1.9328362668226535, 'gamma': 0.0664554502509245}
+  trial 19: AUC=0.96471  params={'learning_rate': 0.021997658637560837, 'max_depth': 6, 'min_child_weight': 15.343294946454769, 'subsample': 0.8707930477035993, 'colsample_bytree': 0.7157053602988885, 'reg_alpha': 0.008635013214645595, 'reg_lambda': 1.3431774824144311, 'gamma': 0.004845338790787131}
+  trial 14: AUC=0.96469  params={'learning_rate': 0.04431575919071095, 'max_depth': 5, 'min_child_weight': 26.050953671838514, 'subsample': 0.8599291295757207, 'colsample_bytree': 0.7221806545556794, 'reg_alpha': 0.08523768441783784, 'reg_lambda': 0.0006804567413046251, 'gamma': 0.026828108418639755}
+  trial 6: AUC=0.96468  params={'learning_rate': 0.039949794211191145, 'max_depth': 5, 'min_child_weight': 32.988614275203325, 'subsample': 0.8325398470083344, 'colsample_bytree': 0.7818496824692568, 'reg_alpha': 0.2338643925620872, 'reg_lambda': 0.005853096722500346, 'gamma': 0.3398172415010597}
+  trial 11: AUC=0.96468  params={'learning_rate': 0.056957388555121, 'max_depth': 5, 'min_child_weight': 34.26993926267308, 'subsample': 0.8837429159921141, 'colsample_bytree': 0.6387033759264936, 'reg_alpha': 0.08032508670149305, 'reg_lambda': 0.0010875349632231467, 'gamma': 0.02268883683250112}
+
+Saved best OOF predictions and params.

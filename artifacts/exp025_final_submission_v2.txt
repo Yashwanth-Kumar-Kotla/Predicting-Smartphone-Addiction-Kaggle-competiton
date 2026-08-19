@@ -1,0 +1,45 @@
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+
+--- seed 42 ---
+LightGBM (untuned, exp001 params)...
+  best_iter=2546
+CatBoost (tuned, exp023 params)...
+  best_iter=5424
+XGBoost (tuned, exp022 params)...
+  best_iter=6152
+seed 42 done, elapsed 272s
+
+--- seed 202 ---
+LightGBM (untuned, exp001 params)...
+  best_iter=2858
+CatBoost (tuned, exp023 params)...
+  best_iter=5149
+XGBoost (tuned, exp022 params)...
+  best_iter=5163
+seed 202 done, elapsed 584s
+
+--- seed 2026 ---
+LightGBM (untuned, exp001 params)...
+  best_iter=2444
+CatBoost (tuned, exp023 params)...
+  best_iter=6612
+XGBoost (tuned, exp022 params)...
+  best_iter=4935
+seed 2026 done, elapsed 945s
+
+Total runtime: 944.6s
+Blend weights (from exp024): {'lgbm': 0.1345467517080716, 'catboost_v2': 0.26550771743038953, 'xgboost_v2': 0.5999455308615389}
+
+All Phase 15 sanity checks passed.
+submission_v2.csv written: 296302 rows
+mean |change| vs submission_multiseed.csv: 0.00652
+max |change| vs submission_multiseed.csv: 0.22283
+correlation with submission_multiseed.csv: 0.999385
+
+prediction stats: min=0.00006 max=1.00000 mean=0.70947
+(train target mean for reference: 0.70942)

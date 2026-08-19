@@ -1,0 +1,19 @@
+Using device: mps
+fold 0: AUC=0.93751  epochs=141  fold_time=48.2s
+fold 1: AUC=0.93751  epochs=121  fold_time=40.3s
+fold 2: AUC=0.93883  epochs=142  fold_time=49.0s
+fold 3: AUC=0.93887  epochs=103  fold_time=39.4s
+fold 4: AUC=0.93820  epochs=167  fold_time=68.3s
+
+OOF AUC: 0.93816
+fold mean: 0.93818  fold std: 0.000599
+runtime: 246.2s
+
+vs exp017 sklearn MLP baseline (0.93784): delta = +0.00032
+
+Correlation with exp024 tree ensemble OOF: 0.91726
+Best blend weights: tree_ensemble=1.000, mlp_gpu=0.000
+Blended OOF AUC: 0.96494  (vs tree-ensemble-alone 0.96494)
+Gain from adding GPU MLP to ensemble: +0.00000
+
+Logged to experiments/experiment_log.csv

@@ -1,0 +1,15 @@
+Pseudo-labeled rows: 145510 (49.1% of test)
+  positive: 129779  negative: 15731
+fold 0: AUC=0.96389  train_size=698605  best_iter=6403
+fold 1: AUC=0.96457  train_size=698605  best_iter=5974
+fold 2: AUC=0.96471  train_size=698605  best_iter=6037
+fold 3: AUC=0.96534  train_size=698605  best_iter=5522
+fold 4: AUC=0.96427  train_size=698606  best_iter=6419
+
+OOF AUC (on original train rows only): 0.96455
+fold mean: 0.96456  fold std: 0.000484
+runtime: 637.8s
+
+vs exp022 tuned XGBoost, no pseudo-labels (0.96473): delta = -0.00018
+
+Logged to experiments/experiment_log.csv

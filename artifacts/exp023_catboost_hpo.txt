@@ -1,0 +1,14 @@
+Completed 9 trials in 9834.9s
+Best 5-fold CV AUC (honest, no proxy): 0.96401
+Best params: {'learning_rate': 0.05804904814262914, 'depth': 6, 'l2_leaf_reg': 0.6970173039936612, 'bagging_temperature': 2.052699079536471, 'random_strength': 2.2007624686980067}
+vs exp019 converged CatBoost baseline (0.96370): delta = +0.00031
+vs exp022 tuned XGBoost (0.96473): delta = -0.00072
+
+Top 5 trials:
+  trial 7: AUC=0.96401  params={'learning_rate': 0.05804904814262914, 'depth': 6, 'l2_leaf_reg': 0.6970173039936612, 'bagging_temperature': 2.052699079536471, 'random_strength': 2.2007624686980067}
+  trial 5: AUC=0.96397  params={'learning_rate': 0.05583585672671547, 'depth': 5, 'l2_leaf_reg': 2.8744623409959895, 'bagging_temperature': 1.7772437065861273, 'random_strength': 0.23225206359998862}
+  trial 6: AUC=0.96379  params={'learning_rate': 0.041473968506620586, 'depth': 5, 'l2_leaf_reg': 0.6238197136284723, 'bagging_temperature': 2.84665661176, 'random_strength': 4.828160165372797}
+  trial 8: AUC=0.96326  params={'learning_rate': 0.018399791448444815, 'depth': 7, 'l2_leaf_reg': 0.5620384401502772, 'bagging_temperature': 2.7279612062363463, 'random_strength': 1.2938999080000846}
+  trial 2: AUC=0.96318  params={'learning_rate': 0.01552587767837672, 'depth': 10, 'l2_leaf_reg': 8.483766803598277, 'bagging_temperature': 0.6370173320348285, 'random_strength': 0.9091248360355031}
+
+Saved best OOF predictions and params.
