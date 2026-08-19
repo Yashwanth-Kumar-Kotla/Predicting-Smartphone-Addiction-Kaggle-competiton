@@ -1,0 +1,2 @@
+OOF AUC (9 feat + entertainment_ratio): 0.96491  fold_std: 0.000535  runtime: 550.3s
+vs exp022 tuned XGBoost, no ratio (0.96473): delta = +0.00018

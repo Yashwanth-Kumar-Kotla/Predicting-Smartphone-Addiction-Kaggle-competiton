@@ -1,0 +1,23 @@
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+======================================================================
+LightGBM + entertainment_ratio
+======================================================================
+OOF AUC: 0.96402  fold_std: 0.000521  runtime: 324.5s
+vs exp001 LightGBM baseline (0.96384): delta = +0.00018
+
+======================================================================
+CatBoost (tuned) + entertainment_ratio
+======================================================================
+OOF AUC: 0.96415  fold_std: 0.000526  runtime: 878.7s
+vs exp023 tuned CatBoost baseline (0.96401): delta = +0.00014
+
+Logged to experiments/experiment_log.csv
