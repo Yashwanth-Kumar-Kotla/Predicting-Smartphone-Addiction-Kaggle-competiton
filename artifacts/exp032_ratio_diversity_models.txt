@@ -1,0 +1,21 @@
+======================================================================
+Logistic regression: 9 raw + ratio-derived features
+======================================================================
+OOF AUC: 0.91332  fold_std: 0.000791  runtime: 1.5s
+vs exp016 logistic without ratio features (0.92451): delta = -0.01119
+
+======================================================================
+GPU MLP: 9 raw + ratio-derived features (device=mps)
+======================================================================
+fold 0: AUC=0.93760  epochs=141
+fold 1: AUC=0.93846  epochs=169
+fold 2: AUC=0.93918  epochs=158
+fold 3: AUC=0.93911  epochs=111
+fold 4: AUC=0.93849  epochs=133
+
+OOF AUC: 0.93855  fold_std: 0.000570  runtime: 248.8s
+vs exp026 GPU MLP without ratio features (0.93816): delta = +0.00039
+
+logistic+ratio: corr_with_trees=0.84713  blend_weights=(tree=1.000, logistic+ratio=0.000)  blend_auc=0.96494  gain_vs_0.96494=+0.00000
+
+mlp+ratio: corr_with_trees=0.91862  blend_weights=(tree=1.000, mlp+ratio=0.000)  blend_auc=0.96494  gain_vs_0.96494=+0.00000

@@ -1,0 +1,9 @@
+Re-running exp016's exact feature set as a same-session baseline check:
+24-feature (no ratio, matches exp016): OOF AUC=0.92640  fold_std=0.000653  n_features=24
+
+Adding the 5 ratio-derived features on top:
+29-feature (+ ratio-derived): OOF AUC=0.92726  fold_std=0.000657  n_features=29
+
+Delta from adding ratio features: +0.00087
+
+corr_with_trees=0.88977  blend_weights=(tree=1.000, logistic=0.000)  blend_auc=0.96494  gain_vs_0.96494=+0.00000

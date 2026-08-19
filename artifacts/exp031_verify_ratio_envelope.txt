@@ -1,0 +1,40 @@
+rows with valid ratio: 517906
+pct inside envelope [1.044,1.965]: 73.8%
+pct outside envelope: 26.2%
+pct beyond 2.5x: 2.1%
+
+target rate inside envelope: 0.7361
+target rate outside envelope: 0.6321
+target rate beyond 2.5x: 0.2671
+overall base rate: 0.7089
+
+binned target rate by ratio (20 quantile bins) -- looking for a hump shape:
+                     n  mean_ratio  target_rate
+bin                                            
+(0.0844, 0.872]  25897    0.772706     0.568097
+(0.872, 0.951]   25894    0.914300     0.730478
+(0.951, 1.002]   25895    0.978305     0.785364
+(1.002, 1.043]   25907    1.023013     0.806770
+(1.043, 1.075]   25938    1.059585     0.798674
+(1.075, 1.11]    25845    1.092700     0.822093
+(1.11, 1.14]     25891    1.124803     0.833301
+(1.14, 1.174]    25902    1.157423     0.821790
+(1.174, 1.208]   25908    1.190770     0.807820
+(1.208, 1.241]   25878    1.224420     0.819963
+(1.241, 1.276]   25894    1.258301     0.789295
+(1.276, 1.312]   25917    1.294072     0.783077
+(1.312, 1.351]   25873    1.331577     0.780427
+(1.351, 1.396]   25901    1.372913     0.758117
+(1.396, 1.452]   25908    1.422969     0.712328
+(1.452, 1.522]   25877    1.485388     0.660355
+(1.522, 1.612]   25900    1.564338     0.597297
+(1.612, 1.758]   25892    1.678198     0.545304
+(1.758, 2.044]   25895    1.884832     0.443561
+(2.044, 20.44]   25894    2.776422     0.313663
+
+test set: same envelope check (no target available, just distribution)
+test pct inside envelope: 73.9%  (train was 73.8%)
+
+Univariate AUC of the raw ratio alone (raw-value, direction-agnostic) -- sanity check for monotone-vs-nonmonotone:
+raw-value AUC of ratio: 0.38223  (max(auc,1-auc)=0.61777)
+(if this is near 0.5 despite target rate varying a lot across bins above, that CONFIRMS non-monotonicity -- a monotone score can't separate a hump)

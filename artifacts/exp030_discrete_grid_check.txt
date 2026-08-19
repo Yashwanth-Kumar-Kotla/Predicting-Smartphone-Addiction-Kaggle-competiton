@@ -1,0 +1,34 @@
+======================================================================
+CARDINALITY CHECK: are these features actually low-cardinality/discrete?
+======================================================================
+age                           unique=     18  non-null= 662440  ratio=0.0000
+daily_screen_time_hours       unique=   1389  non-null= 595515  ratio=0.0023
+social_media_hours            unique=    721  non-null= 557374  ratio=0.0013
+gaming_hours                  unique=    401  non-null= 564548  ratio=0.0007
+work_study_hours              unique=    600  non-null= 639851  ratio=0.0009
+sleep_hours                   unique=    451  non-null= 646889  ratio=0.0007
+notifications_per_day         unique=    231  non-null= 623785  ratio=0.0004
+app_opens_per_day             unique=    166  non-null= 610659  ratio=0.0003
+weekend_screen_time           unique=   1437  non-null= 579306  ratio=0.0025
+
+======================================================================
+DUPLICATE-GROUP TARGET CONSISTENCY: weak features only
+======================================================================
+rows with an exact-duplicate on all 4 weak features: 3068 / 512924 (0.60%)
+mean within-group target std (duplicate groups only): 0.1916
+(for reference: std of a Bernoulli(0.709) variable = 0.4542 -- if duplicate groups are much LOWER than this, that supports the template-row hypothesis)
+
+======================================================================
+SAME CHECK ON THE 5 'REAL' FEATURES (sanity comparison)
+======================================================================
+daily_screen_time_hours       unique=   1389  non-null= 595515  ratio=0.0023
+weekend_screen_time           unique=   1437  non-null= 579306  ratio=0.0025
+social_media_hours            unique=    721  non-null= 557374  ratio=0.0013
+work_study_hours              unique=    600  non-null= 639851  ratio=0.0009
+gaming_hours                  unique=    401  non-null= 564548  ratio=0.0007
+
+======================================================================
+FULL 9-FEATURE ROW DUPLICATE CHECK (train vs itself, and train vs test)
+======================================================================
+exact duplicate rows on all 9 numeric features (train, ignoring NaN pattern differences): 9
+exact duplicate rows on all 9 numeric features (train+test combined): 17
