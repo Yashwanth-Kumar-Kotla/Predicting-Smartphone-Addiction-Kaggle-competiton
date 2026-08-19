@@ -1,0 +1,14 @@
+Individual OOF AUCs (with both ratios):
+  lgbm       0.96434
+  catboost   0.96444
+  xgboost    0.96524
+
+Pairwise correlation:
+  lgbm       1.00000 0.99259 0.99459
+  catboost   0.99259 1.00000 0.99367
+  xgboost    0.99459 0.99367 1.00000
+
+OOF-optimized weights: lgbm=0.122, catboost=0.243, xgboost=0.635
+New ensemble OOF AUC: 0.96542
+vs exp036 ensemble (entertainment_ratio only, 0.96511): delta = +0.00031
+vs exp024 ensemble (no ratios, 0.96494): delta = +0.00048

@@ -1,0 +1,5 @@
+OOF AUC (9 feat + both ratios): 0.96524  fold_std: 0.000476  runtime: 607.4s
+vs exp022 no ratio (0.96473): delta = +0.00051
+vs exp034 entertainment_ratio only (0.96491): delta = +0.00033
+vs exp039 workstudy_ratio only (0.96486): delta = +0.00038
+(if additive, expect ~0.96473 + 0.00018 + 0.00013 = 0.96504)
