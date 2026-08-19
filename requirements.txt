@@ -9,3 +9,4 @@ catboost==1.2.10
 optuna==4.9.0
 shap==0.52.0
 torch==2.13.0
+openfe==0.0.12

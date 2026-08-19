@@ -1,0 +1,8 @@
+transform runtime: 4.1s
+new columns generated: ['autoFE_f_0', 'autoFE_f_1', 'autoFE_f_2', 'autoFE_f_3', 'autoFE_f_4', 'autoFE_f_5', 'autoFE_f_6', 'autoFE_f_7', 'autoFE_f_8', 'autoFE_f_9', 'autoFE_f_10', 'autoFE_f_11', 'autoFE_f_12', 'autoFE_f_13', 'autoFE_f_14', 'autoFE_f_15', 'autoFE_f_16', 'autoFE_f_17', 'autoFE_f_18', 'autoFE_f_19']
+total features: 33
+
+OOF AUC (current best + top 20 OpenFE features): 0.96644  fold_std: 0.000429  runtime: 1023.4s
+vs exp046 Variant B current best (0.96538): delta = +0.00106
+
+Logged to experiments/experiment_log.csv

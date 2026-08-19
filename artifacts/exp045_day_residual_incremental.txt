@@ -1,0 +1,2 @@
+OOF AUC (both ratios + day_residual): 0.96516  fold_std: 0.000482  runtime: 509.2s
+vs exp040 both ratios only (0.96524): delta = -0.00008

@@ -1,0 +1,8 @@
+Individual OOF AUCs (final feature set):
+  lgbm       0.96440
+  catboost   0.96452
+  xgboost    0.96538
+
+OOF-optimized weights: lgbm=0.082, catboost=0.240, xgboost=0.678
+New ensemble OOF AUC: 0.96553
+vs exp042 ensemble (2 ratios only, 0.96542): delta = +0.00011

@@ -1,0 +1,6 @@
+Variant A (decomposed only, no combined): OOF AUC=0.96509  fold_std=0.000466  runtime=548.7s  n_features=12
+Variant B (decomposed + combined): OOF AUC=0.96538  fold_std=0.000504  runtime=626.9s  n_features=13
+
+vs exp040 combined ratio only (0.96524):
+  Variant A delta: -0.00015
+  Variant B delta: +0.00014
