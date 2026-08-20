@@ -1,0 +1,13 @@
+Individual OOF AUCs (all with nested OpenFE features):
+  lgbm       0.96530
+  catboost   0.96557
+  xgboost    0.96604
+
+Pairwise correlation:
+  lgbm       1.00000 0.99387 0.99565
+  catboost   0.99387 1.00000 0.99499
+  xgboost    0.99565 0.99499 1.00000
+
+OOF-optimized weights: lgbm=0.102, catboost=0.305, xgboost=0.593
+New ensemble OOF AUC: 0.96622
+vs exp055 mixed ensemble (only XGBoost had OpenFE, 0.96615): delta = +0.00007

@@ -1,0 +1,5 @@
+Current best (probability-weighted blend, exp065): 0.96737
+Equal-weight rank blend: 0.96729
+OOF-optimized rank blend: 0.96736  weights=lgbm=0.099, catboost=0.297, xgboost=0.604
+
+Delta (optimized rank vs current probability blend): -0.00000

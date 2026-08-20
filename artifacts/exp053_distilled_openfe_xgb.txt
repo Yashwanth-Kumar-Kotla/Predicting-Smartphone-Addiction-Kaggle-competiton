@@ -1,0 +1,5 @@
+OOF AUC (current best + sqrt_daily + daily_plus_weekend): 0.96530  fold_std: 0.000460  runtime: 627.3s
+vs exp046 Variant B current best (0.96538): delta = -0.00008
+vs exp051 full 20-feature batch (0.96644): delta = -0.00114
+
+Logged to experiments/experiment_log.csv

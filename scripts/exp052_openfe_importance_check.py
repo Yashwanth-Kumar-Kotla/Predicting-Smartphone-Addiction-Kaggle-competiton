@@ -16,43 +16,49 @@ from openfe import transform
 
 from common import load_data, NUM_COLS, TARGET, SEED
 
-train, test = load_data()
-X = train[NUM_COLS].copy()
-Xte = test[NUM_COLS].copy()
 
-with open("artifacts/exp050_openfe_features.pkl", "rb") as f:
-    features = pickle.load(f)
+def main():
+    train, test = load_data()
+    X = train[NUM_COLS].copy()
+    Xte = test[NUM_COLS].copy()
 
-print("Top 20 discovered features (operator + columns):")
-for i, feat in enumerate(features[:20]):
-    print(f"  autoFE_f_{i}: {feat.name}({feat.get_fnode()})")
+    with open("artifacts/exp050_openfe_features.pkl", "rb") as f:
+        features = pickle.load(f)
 
-X_new, _ = transform(X, Xte, features[:20], n_jobs=8)
-new_cols = [c for c in X_new.columns if c not in NUM_COLS]
-for c in new_cols:
-    train[c] = X_new[c].values
+    print("Top 20 discovered features (operator + columns):")
+    for i, feat in enumerate(features[:20]):
+        print(f"  autoFE_f_{i}: {feat.name}({feat.get_fnode()})")
 
-train["social_ratio"] = train["social_media_hours"] / train["daily_screen_time_hours"]
-train["gaming_ratio"] = train["gaming_hours"] / train["daily_screen_time_hours"]
-train["entertainment_ratio"] = train["social_ratio"] + train["gaming_ratio"]
-train["workstudy_ratio"] = train["work_study_hours"] / train["daily_screen_time_hours"]
+    X_new, _ = transform(X, Xte, features[:20], n_jobs=8)
+    new_cols = [c for c in X_new.columns if c not in NUM_COLS]
+    for c in new_cols:
+        train[c] = X_new[c].values
 
-feat_cols = NUM_COLS + ["entertainment_ratio", "social_ratio", "gaming_ratio", "workstudy_ratio"] + new_cols
-y = train[TARGET].values
+    train["social_ratio"] = train["social_media_hours"] / train["daily_screen_time_hours"]
+    train["gaming_ratio"] = train["gaming_hours"] / train["daily_screen_time_hours"]
+    train["entertainment_ratio"] = train["social_ratio"] + train["gaming_ratio"]
+    train["workstudy_ratio"] = train["work_study_hours"] / train["daily_screen_time_hours"]
 
-Xtr, Xval, ytr, yval = train_test_split(train[feat_cols], y, test_size=0.1, stratify=y, random_state=SEED)
+    feat_cols = NUM_COLS + ["entertainment_ratio", "social_ratio", "gaming_ratio", "workstudy_ratio"] + new_cols
+    y = train[TARGET].values
 
-with open("artifacts/exp022_best_params.json") as f:
-    xgb_tuned = json.load(f)
-params = dict(xgb_tuned, n_estimators=6000, tree_method="hist", eval_metric="auc",
-              early_stopping_rounds=100, random_state=SEED, n_jobs=-1)
-model = XGBClassifier(**params)
-model.fit(Xtr, ytr, eval_set=[(Xval, yval)], verbose=False)
+    Xtr, Xval, ytr, yval = train_test_split(train[feat_cols], y, test_size=0.1, stratify=y, random_state=SEED)
 
-importances = model.feature_importances_
-imp_df = list(zip(feat_cols, importances))
-imp_df.sort(key=lambda x: -x[1])
-print("\nFeature importances (single 90/10 split, for diagnostic purposes only):")
-for name, imp in imp_df:
-    marker = " <-- autoFE" if name.startswith("autoFE") else ""
-    print(f"  {name:30s} {imp:.5f}{marker}")
+    with open("artifacts/exp022_best_params.json") as f:
+        xgb_tuned = json.load(f)
+    params = dict(xgb_tuned, n_estimators=6000, tree_method="hist", eval_metric="auc",
+                  early_stopping_rounds=100, random_state=SEED, n_jobs=-1)
+    model = XGBClassifier(**params)
+    model.fit(Xtr, ytr, eval_set=[(Xval, yval)], verbose=False)
+
+    importances = model.feature_importances_
+    imp_df = list(zip(feat_cols, importances))
+    imp_df.sort(key=lambda x: -x[1])
+    print("\nFeature importances (single 90/10 split, for diagnostic purposes only):")
+    for name, imp in imp_df:
+        marker = " <-- autoFE" if name.startswith("autoFE") else ""
+        print(f"  {name:30s} {imp:.5f}{marker}")
+
+
+if __name__ == "__main__":
+    main()
