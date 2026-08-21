@@ -1,0 +1,13 @@
+Added exact-value target-encoded columns: ['age_exactval_te', 'daily_screen_time_hours_exactval_te', 'social_media_hours_exactval_te', 'gaming_hours_exactval_te', 'work_study_hours_exactval_te', 'sleep_hours_exactval_te', 'notifications_per_day_exactval_te', 'app_opens_per_day_exactval_te', 'weekend_screen_time_exactval_te']
+fold 0: base=0.96703  +exactval_te=0.96770  elapsed=250s
+fold 1: base=0.96785  +exactval_te=0.96862  elapsed=546s
+fold 2: base=0.96783  +exactval_te=0.96865  elapsed=811s
+fold 3: base=0.96846  +exactval_te=0.96903  elapsed=1136s
+fold 4: base=0.96742  +exactval_te=0.96818  elapsed=1428s
+
+Baseline (56 feat) OOF AUC: 0.96772
++ exact-value target encoding (9 new cols) OOF AUC: 0.96843
+Delta: +0.00072
+Saved artifacts/consensus_exactval_cache.pkl (beat baseline, adopting)
+
+Logged exp096.
