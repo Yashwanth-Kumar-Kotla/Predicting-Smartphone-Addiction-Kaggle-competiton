@@ -1,0 +1,28 @@
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+Total feature count: 56
+fold 0: lgbm=0.96668  catboost=0.96629  elapsed=188s
+fold 1: lgbm=0.96755  catboost=0.96701  elapsed=399s
+fold 2: lgbm=0.96746  catboost=0.96716  elapsed=649s
+fold 3: lgbm=0.96813  catboost=0.96782  elapsed=873s
+fold 4: lgbm=0.96710  catboost=0.96685  elapsed=1080s
+
+LightGBM + expanded OOF AUC: 0.96738 (vs exp089 artifacts-only 0.96726)
+CatBoost + expanded OOF AUC: 0.96702 (vs exp089 artifacts-only 0.96686)
+  lgbm       0.96738
+  catboost   0.96702
+  xgboost    0.96772
+
+OOF-optimized weights: lgbm=0.235, catboost=0.198, xgboost=0.567
+New ensemble OOF AUC: 0.96785
+vs exp089 ensemble (artifacts-only, 0.96771): delta = +0.00014
+
+Logged exp093.

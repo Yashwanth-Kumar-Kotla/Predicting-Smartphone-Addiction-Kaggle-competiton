@@ -1,0 +1,12 @@
+New artifact feature columns (14): ['other_screen', 'other_screen_abs', 'daily_screen_time_hours_decimals_len', 'daily_screen_time_hours_first_digit', 'social_media_hours_decimals_len', 'social_media_hours_first_digit', 'gaming_hours_decimals_len', 'gaming_hours_first_digit', 'work_study_hours_decimals_len', 'work_study_hours_first_digit', 'sleep_hours_decimals_len', 'sleep_hours_first_digit', 'weekend_screen_time_decimals_len', 'weekend_screen_time_first_digit']
+fold 0: base=0.96651  aug=0.96680  elapsed=220s
+fold 1: base=0.96744  aug=0.96766  elapsed=440s
+fold 2: base=0.96745  aug=0.96760  elapsed=690s
+fold 3: base=0.96806  aug=0.96833  elapsed=963s
+fold 4: base=0.96713  aug=0.96731  elapsed=1218s
+
+Baseline (consensus-9, no artifact features) OOF AUC: 0.96732
++ generator artifact features (14 new cols) OOF AUC: 0.96754
+Delta: +0.00022
+
+Logged exp088.

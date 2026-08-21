@@ -1,0 +1,16 @@
+New consensus-25 total: 25, overlap with old-9: 5, new-only to materialize: 20
+Matched 20/20 new-only features from seed42's top-40
+Materialized columns: ['newfe_autoFE_f_0', 'newfe_autoFE_f_1', 'newfe_autoFE_f_2', 'newfe_autoFE_f_3', 'newfe_autoFE_f_4', 'newfe_autoFE_f_5', 'newfe_autoFE_f_6', 'newfe_autoFE_f_7', 'newfe_autoFE_f_8', 'newfe_autoFE_f_9', 'newfe_autoFE_f_10', 'newfe_autoFE_f_11', 'newfe_autoFE_f_12', 'newfe_autoFE_f_13', 'newfe_autoFE_f_14', 'newfe_autoFE_f_15', 'newfe_autoFE_f_16', 'newfe_autoFE_f_17', 'newfe_autoFE_f_18', 'newfe_autoFE_f_19']
+Total feature count: 56 (was 36)
+fold 0: base(36)=0.96680  expanded(56)=0.96703  elapsed=281s
+fold 1: base(36)=0.96766  expanded(56)=0.96785  elapsed=594s
+fold 2: base(36)=0.96760  expanded(56)=0.96783  elapsed=913s
+fold 3: base(36)=0.96833  expanded(56)=0.96846  elapsed=1270s
+fold 4: base(36)=0.96731  expanded(56)=0.96742  elapsed=1610s
+
+Baseline (36 feat) OOF AUC: 0.96754
+Expanded (56 feat) OOF AUC: 0.96772
+Delta: +0.00018
+Saved artifacts/consensus_expanded_cache.pkl (beat baseline, adopting)
+
+Logged exp092.
