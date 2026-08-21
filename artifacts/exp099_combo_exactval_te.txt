@@ -1,0 +1,12 @@
+Added combo exact-value target-encoded columns: ['daily_minus_social_exactval_te', 'daily_plus_social_exactval_te', 'daily_minus_weekend_exactval_te', 'daily_minus_ssgw_exactval_te', 'social_minus_gaming_exactval_te']
+fold 0: base=0.96770  +combo_te=0.96772  elapsed=212s
+fold 1: base=0.96862  +combo_te=0.96855  elapsed=445s
+fold 2: base=0.96865  +combo_te=0.96862  elapsed=690s
+fold 3: base=0.96903  +combo_te=0.96897  elapsed=974s
+fold 4: base=0.96818  +combo_te=0.96823  elapsed=1281s
+
+Baseline (65 feat) OOF AUC: 0.96843
++ combo exact-value target encoding (5 new cols) OOF AUC: 0.96842
+Delta: -0.00002
+
+Logged exp099.
