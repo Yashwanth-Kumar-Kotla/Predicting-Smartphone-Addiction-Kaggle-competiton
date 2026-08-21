@@ -1,0 +1,6 @@
+seed=42 (matches exp061's fold split), full-data OpenFE features: OOF AUC=0.96669  fold_std=0.000484  runtime=1380.8s
+seed=123 (different fold split), full-data OpenFE features: OOF AUC=0.96663  fold_std=0.000379  runtime=1183.9s
+
+exp061 (nested, per-fold discovery, seed=42): 0.96720
+this run (full-data discovery, seed=42): 0.96669  (isolates full-data selection-bias effect: -0.00051)
+this run (full-data discovery, seed=123): 0.96663  (isolates fold-split stability: -0.00006)

@@ -1,0 +1,13 @@
+Individual OOF AUCs (consensus features, XGBoost tuned):
+  lgbm       0.96653
+  catboost   0.96659
+  xgboost    0.96732
+
+Pairwise correlation:
+  lgbm       1.00000 0.99416 0.99578
+  catboost   0.99416 1.00000 0.99480
+  xgboost    0.99578 0.99480 1.00000
+
+OOF-optimized weights: lgbm=0.086, catboost=0.234, xgboost=0.680
+New ensemble OOF AUC: 0.96743
+vs exp073 ensemble (untuned XGBoost, 0.96734): delta = +0.00009

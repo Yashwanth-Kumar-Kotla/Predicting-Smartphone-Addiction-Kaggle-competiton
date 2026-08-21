@@ -1,0 +1,14 @@
+Feature count for HPO: 22
+Completed 6 trials in 3790.2s
+Best 5-fold CV AUC: 0.96646
+Best params: {'learning_rate': 0.08909314445992443, 'depth': 5, 'l2_leaf_reg': 2.3334818836184614, 'bagging_temperature': 1.7772437065861273, 'random_strength': 0.0014853153980421612}
+vs CatBoost consensus-9 (exp072, untuned params, 0.96659): delta = -0.00013
+
+Top 5 trials:
+  trial 5: AUC=0.96646  params={'learning_rate': 0.08909314445992443, 'depth': 5, 'l2_leaf_reg': 2.3334818836184614, 'bagging_temperature': 1.7772437065861273, 'random_strength': 0.0014853153980421612}
+  trial 2: AUC=0.96590  params={'learning_rate': 0.030868416765126767, 'depth': 9, 'l2_leaf_reg': 6.053448468001084, 'bagging_temperature': 0.6370173320348285, 'random_strength': 0.004705059281907649}
+  trial 0: AUC=0.96586  params={'learning_rate': 0.05042162933217116, 'depth': 9, 'l2_leaf_reg': 4.480392682684062, 'bagging_temperature': 1.7959754525911098, 'random_strength': 0.003776663327107336}
+  trial 4: AUC=0.96549  params={'learning_rate': 0.07006375403316689, 'depth': 4, 'l2_leaf_reg': 1.1996621453406358, 'bagging_temperature': 1.099085529881075, 'random_strength': 0.04863951003835899}
+  trial 3: AUC=0.96484  params={'learning_rate': 0.038684926168761874, 'depth': 5, 'l2_leaf_reg': 2.408207265453542, 'bagging_temperature': 1.2958350559263474, 'random_strength': 0.011946697137851393}
+
+Saved best OOF predictions and params.

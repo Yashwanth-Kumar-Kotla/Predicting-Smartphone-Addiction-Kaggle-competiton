@@ -1,0 +1,13 @@
+Confident test rows (prob<0.02 or >0.98): 150427 / 296302 (50.8%)
+Pseudo-label class balance: positive=0.8813 (train mean=0.7094)
+fold 0: baseline=0.96651  pseudo=0.96656  elapsed=217s
+fold 1: baseline=0.96744  pseudo=0.96742  elapsed=448s
+fold 2: baseline=0.96745  pseudo=0.96739  elapsed=694s
+fold 3: baseline=0.96806  pseudo=0.96804  elapsed=963s
+fold 4: baseline=0.96713  pseudo=0.96715  elapsed=1228s
+
+Baseline (real train only) OOF AUC: 0.96732
+Pseudo-labeled (train + 150427 confident test rows) OOF AUC: 0.96731
+Delta: -0.00000
+
+Logged exp085.

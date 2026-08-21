@@ -1,0 +1,14 @@
+Feature count for HPO: 53
+Completed 9 trials in 9588.7s
+Best 5-fold CV AUC: 0.96642
+Best params: {'learning_rate': 0.04916248229708501, 'max_depth': 6, 'min_child_weight': 11.538940060945343, 'subsample': 0.7913485977701479, 'colsample_bytree': 0.4109126733153162, 'colsample_bynode': 0.978709239435191, 'reg_alpha': 0.07658349297088655, 'reg_lambda': 1.216882269220215, 'gamma': 0.2338643925620872}
+vs exp061 default-tuned XGBoost on this feature set (0.96720): delta = -0.00078
+
+Top 5 trials:
+  trial 5: AUC=0.96642  params={'learning_rate': 0.04916248229708501, 'max_depth': 6, 'min_child_weight': 11.538940060945343, 'subsample': 0.7913485977701479, 'colsample_bytree': 0.4109126733153162, 'colsample_bynode': 0.978709239435191, 'reg_alpha': 0.07658349297088655, 'reg_lambda': 1.216882269220215, 'gamma': 0.2338643925620872}
+  trial 1: AUC=0.96577  params={'learning_rate': 0.05334317001119035, 'max_depth': 4, 'min_child_weight': 37.000740729710564, 'subsample': 0.8913549242801476, 'colsample_bytree': 0.4274034664069657, 'colsample_bynode': 0.42727747704497043, 'reg_alpha': 1.4309923693515167e-05, 'reg_lambda': 9.345744384425808e-05, 'gamma': 0.0014077923139972403}
+  trial 2: AUC=0.96568  params={'learning_rate': 0.032524439080037916, 'max_depth': 6, 'min_child_weight': 14.635861028817612, 'subsample': 0.6488228512282146, 'colsample_bytree': 0.4752867891211309, 'colsample_bynode': 0.5564532903055842, 'reg_alpha': 0.0007476711975157361, 'reg_lambda': 0.12180914876352142, 'gamma': 1.5777663630582475e-05}
+  trial 8: AUC=0.96567  params={'learning_rate': 0.015149151241893618, 'max_depth': 9, 'min_child_weight': 18.719423171582186, 'subsample': 0.8551525088143456, 'colsample_bytree': 0.7627622080115675, 'colsample_bynode': 0.35183125621386324, 'reg_alpha': 0.00018142758011323255, 'reg_lambda': 5.62986457608836e-06, 'gamma': 0.15087613675681674}
+  trial 0: AUC=0.96517  params={'learning_rate': 0.029345405892355497, 'max_depth': 10, 'min_child_weight': 19.978808992275813, 'subsample': 0.8095304694689628, 'colsample_bytree': 0.39361118426546193, 'colsample_bynode': 0.40919616423534183, 'reg_alpha': 2.322665036813702e-06, 'reg_lambda': 0.4076879958997537, 'gamma': 0.004042872735027332}
+
+Saved best OOF predictions and params.

@@ -1,0 +1,7 @@
+Logistic regression stacker OOF AUC: 0.96743  (vs Nelder-Mead blend 0.96747): delta=-0.00004
+Shallow LightGBM stacker OOF AUC: 0.96743  (vs Nelder-Mead blend 0.96747): delta=-0.00004
+
+Best stacker: shallow_lightgbm (0.96743)
+Neither stacker beats the linear blend -- linear blend remains best.
+
+Logged exp084.
