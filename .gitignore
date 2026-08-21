@@ -2,6 +2,4 @@ venv/
 __pycache__/
 *.pyc
 openfe_tmp_data*.feather
-artifacts/consensus_data_cache.pkl
-artifacts/consensus_artifact_cache.pkl
-artifacts/consensus_expanded_cache.pkl
+artifacts/*cache*.pkl
