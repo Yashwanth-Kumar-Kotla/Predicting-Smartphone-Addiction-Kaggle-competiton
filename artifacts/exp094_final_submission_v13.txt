@@ -1,0 +1,45 @@
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/Users/yash/Downloads/Predicting Smartphone Addiction Kaggle competiton/venv/lib/python3.14/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+Total feature count: 56
+
+--- seed 42 ---
+LightGBM (HPO-tuned)...
+  best_iter=1896
+CatBoost...
+  best_iter=4214
+XGBoost (HPO-tuned)...
+  best_iter=3682
+seed 42 done, elapsed 259s
+
+--- seed 202 ---
+LightGBM (HPO-tuned)...
+  best_iter=2646
+CatBoost...
+  best_iter=4173
+XGBoost (HPO-tuned)...
+  best_iter=3917
+seed 202 done, elapsed 556s
+
+--- seed 2026 ---
+LightGBM (HPO-tuned)...
+  best_iter=2016
+CatBoost...
+  best_iter=3951
+XGBoost (HPO-tuned)...
+  best_iter=3314
+seed 2026 done, elapsed 827s
+
+Total runtime: 827.5s
+Blend weights (from exp093): {'lgbm': 0.23517616406196115, 'catboost': 0.19759100211966693, 'xgboost': 0.5672328338183719}
+
+All Phase 15 sanity checks passed.
+submission_v13.csv written: 296302 rows
+mean |change| vs submission_v12.csv (prev): 0.00926
+correlation with submission_v12.csv: 0.998709
+
+prediction stats: min=0.00004 max=1.00000 mean=0.70970
+(train target mean for reference: 0.70942)
