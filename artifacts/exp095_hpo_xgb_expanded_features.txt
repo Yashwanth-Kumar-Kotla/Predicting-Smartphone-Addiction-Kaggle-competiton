@@ -1,0 +1,16 @@
+Feature count for HPO: 56
+Completed 15 trials in 9337.8s
+Best 5-fold CV AUC: 0.96764
+Best params: {'learning_rate': 0.026049148002755856, 'max_depth': 6, 'min_child_weight': 3.163873411127412, 'subsample': 0.7614916938204107, 'colsample_bytree': 0.3091982210024658, 'reg_alpha': 8.166279573690671e-05, 'reg_lambda': 0.0009844038957897748, 'gamma': 0.021453374167916258}
+vs exp092 old-params XGBoost on 56-feat set (0.96772): delta = -0.00008
+
+Top 5 trials:
+  trial 14: AUC=0.96764  params={'learning_rate': 0.026049148002755856, 'max_depth': 6, 'min_child_weight': 3.163873411127412, 'subsample': 0.7614916938204107, 'colsample_bytree': 0.3091982210024658, 'reg_alpha': 8.166279573690671e-05, 'reg_lambda': 0.0009844038957897748, 'gamma': 0.021453374167916258}
+  trial 6: AUC=0.96755  params={'learning_rate': 0.04551431297183587, 'max_depth': 5, 'min_child_weight': 35.75466722565282, 'subsample': 0.87129648817639, 'colsample_bytree': 0.9576492590949324, 'reg_alpha': 0.43484449457612395, 'reg_lambda': 0.007458829176178735, 'gamma': 0.3398172415010597}
+  trial 7: AUC=0.96751  params={'learning_rate': 0.022847274804960065, 'max_depth': 5, 'min_child_weight': 1.1815628565061058, 'subsample': 0.7138656157671425, 'colsample_bytree': 0.5720741027826374, 'reg_alpha': 5.125997481860622e-05, 'reg_lambda': 0.2332562746013911, 'gamma': 0.0001382037922863699}
+  trial 8: AUC=0.96739  params={'learning_rate': 0.030516866157722596, 'max_depth': 8, 'min_child_weight': 1.6817795320798221, 'subsample': 0.8807689432639139, 'colsample_bytree': 0.35218545057583955, 'reg_alpha': 1.653499964207631, 'reg_lambda': 0.1004437709588213, 'gamma': 1.5570196345516602e-05}
+  trial 11: AUC=0.96736  params={'learning_rate': 0.06122137935361304, 'max_depth': 4, 'min_child_weight': 37.38305234138978, 'subsample': 0.7051743891170793, 'colsample_bytree': 0.6236412104951519, 'reg_alpha': 1.7176600461367286, 'reg_lambda': 0.002741724815396741, 'gamma': 0.013115406802176835}
+
+Saved best OOF predictions and params.
+
+Logged exp095.
